@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use('/users',usersRouter);
 
 app.get('/',(req,res)=>{
-    res.send('mre');
+    res.send('WELCOME TO BACKEND DEVELOPMENT');
 })
 
-app.listen(PORT,()=> console.log(`hell0 ${PORT}`))
+app.listen(PORT,()=> console.log(`Server Running on port: http://localhost:${PORT}`))
