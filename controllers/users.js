@@ -19,7 +19,6 @@ export const getUser=(req,res)=>{
 export const  createUser=(req,res)=>{
     const user=req.body
 
-
     users.push({...user,Id:uuidv4()});
 
     res.send(`User added sussessfully ${user.firstName} added to database`);
